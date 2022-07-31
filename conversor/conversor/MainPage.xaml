@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="conversor.MainPage">
+
+    <Grid BackgroundColor="#63DC64">
+        <StackLayout VerticalOptions="Center" Margin="20" Spacing="10">
+            <Label Text="Conversor de Dolares"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+            />
+            <Frame HasShadow="False" CornerRadius="30">
+                <Entry Keyboard="Numeric" 
+                       Placeholder="Dolares ($)"
+                       TextColor="Black"
+                       PlaceholderColor="Black"
+                       FontSize="Large"
+                       x:Name="txtdolar"
+                       />
+            </Frame>
+            <Button
+                Text="Pesos Mexicanos"
+                CornerRadius="15"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Pmexi"/>
+            <Button
+                Text="Pesos Colombianos"
+                CornerRadius="15"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Pcolo"/>
+            <Button
+                Text="Soles Peruanos"
+                CornerRadius="15"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Speru"/>
+            <Button
+                Text="Yenes Japoneses"
+                CornerRadius="15"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Yjapo"/>
+            <Button
+                Text="Yuanes Chinos"
+                CornerRadius="15"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Margin="0,20,0,0"
+                TextTransform="None"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Ychin"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Resultado"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+                <Label Text="0.0"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       x:Name="reslbl"/>
+            </StackLayout>
+
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
